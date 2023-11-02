@@ -5,3 +5,5 @@ Website for curving grades
 <input type="text" id="grades:" name="grade">
 
 <button type="button">Save Numbers!</button>
+<button type="button">Curve Numbers!</button>
+<button type="button">Clear Numbers!</button>
