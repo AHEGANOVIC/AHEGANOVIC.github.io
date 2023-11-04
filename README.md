@@ -3,21 +3,25 @@ Website for curving grades
 
 <html>
 <head>
-<label for="Name">Enter Grades Here:</label>
-<input type="text" id="grades:" name="grade">
+    <label for="Name">Enter Grades Here:</label>
+    <input type="text" id="grades:" name="grade">
 </head>
 
-<button 
-type="button">Save Numbers!
-<?PHP
-echo shell_exec("Tkinter Korn Place.py 'getinput'");
-?>
-</button>
-
-
-<button type="button">Curve Numbers!</button>
-<button type="button">Clear Numbers!</button>
-
+<button id="pythonButton" type="button">Save Numbers!</button>
+<script>
+    document.getElementById("pythonButton").addEventListener("click", getinput() {
+        fetch('http://127.0.0.1:5000', {
+            method: 'GET',
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+</script>
 
 
 
