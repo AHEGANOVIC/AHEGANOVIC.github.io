@@ -7,6 +7,10 @@ Website for curving grades
     <input type="text" id="grades:" name="grade">
 </head>
 
+<button 
+id="saveButton" type="button">Save Numbers!
+</button>
+
 <script>
 function getGrades() {
 const gradeslist = new Array();
@@ -23,7 +27,7 @@ alert("Button clicked!");
 });
 </script>
 
-<button id="saveButton" type="button">Save Numbers!</button>
+
 
 
 
