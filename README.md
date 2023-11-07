@@ -16,7 +16,7 @@ Website for curving grades
 </body>
 
 <body>
-<button onclick="clearGrades()"> id="clearButton" type="button">Clear Numbers! </button>
+<button onclick="clearGrades()" id="clearButton" type="button">Clear Numbers! </button>
 </body>
 
 <script>
