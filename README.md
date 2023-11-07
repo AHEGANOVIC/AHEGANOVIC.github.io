@@ -9,15 +9,21 @@ Website for curving grades
 
 <script>
 function getGrades() {
+const gradeslist = new Array();
+
 var grades = document.getElementById('grades').value;
-    const gradeslist = new Array();
-
-
+gradeslist.push(grades)
 }
 </script>
 
+<script>
+var button = document.getElementById("saveButton");
+button.addEventListener("click", getGrades() {
+alert("Button clicked!");
+});
+</script>
 
-<button id="pythonButton" type="button">Save Numbers!</button>
+<button id="saveButton" type="button">Save Numbers!</button>
 
 
 
