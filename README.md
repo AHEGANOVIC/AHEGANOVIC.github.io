@@ -14,17 +14,17 @@ id="saveButton" type="button">Save Numbers!
 <script>
 function getGrades() {
 const gradeslist = new Array();
-
 var grades = document.getElementById('grades').value;
 gradeslist.push(grades)
 }
 </script>
 
 <script>
+{
 var button = document.getElementById("saveButton");
-button.addEventListener("click", getGrades() {
-alert("Button clicked!");
-});
+button.addEventListener("click", getGrades() ,
+alert("Button clicked!"))
+}
 </script>
 
 
