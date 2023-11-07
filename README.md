@@ -22,8 +22,8 @@ gradeslist.push(grades)
 <script>
 {
 var button = document.getElementById("saveButton");
-button.addEventListener("click", getGrades() ,
-alert("Button clicked!"))
+button.addEventListener("click", getGrades());
+    button.classList.toggle("show")
 }
 </script>
 
