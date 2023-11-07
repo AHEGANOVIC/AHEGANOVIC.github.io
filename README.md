@@ -16,11 +16,11 @@ Website for curving grades
 </body>
 
 <body>
-<button onclick="clearGrades()" id="clearButton" type="button">Clear Numbers! </button>
+<button onclick="clearGrades()"> id="clearButton" type="button">Clear Numbers! </button>
 </body>
 
 <script>
-function getGrades() {
+function getGrades(){
     const gradeslist = new Array();
     var grades = document.getElementById('grades').value;
     gradeslist.push(grades)
