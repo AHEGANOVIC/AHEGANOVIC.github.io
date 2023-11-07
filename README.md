@@ -20,11 +20,9 @@ gradeslist.push(grades)
 </script>
 
 <script>
-{
 var button = document.getElementById("saveButton");
 button.addEventListener("click", getGrades());
-    button.classList.toggle("show")
-}
+button.classList.toggle("show")
 </script>
 
 
