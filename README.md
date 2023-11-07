@@ -19,6 +19,16 @@ Website for curving grades
 <button onclick="clearGrades()" id="clearButton" type="button">Clear Numbers! </button>
 </body>
 
+<body>
+    <button id="saveButton" onclick="getGrades()">Show Popup</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopupButton" onclick="closePopup()">×</span>
+            <p>This is a simple popup!</p>
+</div>
+</div>
+</body>
+
 <script>
 function getGrades(){
     const gradeslist = new Array();
