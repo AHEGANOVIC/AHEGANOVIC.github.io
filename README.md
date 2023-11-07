@@ -25,8 +25,8 @@ function getGrades(){
     var grades = document.getElementById('grades').value;
     gradeslist.push(grades)
     var button = document.getElementById("saveButton");
-    button.addEventListener("click", getGrades());
-    button.classList.toggle("show")
+    button.addEventListener("click", getGrades); 
+    button.classList.toggle("show");
 }
 </script>
 
@@ -39,7 +39,7 @@ function getGrades(){
     function clearGrades() {
     }
 </script>
-
+</html>
 
 
 
