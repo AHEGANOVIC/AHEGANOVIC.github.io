@@ -62,7 +62,7 @@ function getGrades(){
     function clearGrades() {
     }
 </script>
-</html>
+
 
 
 
