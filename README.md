@@ -20,14 +20,13 @@ Website for curving grades
 </body>
 
 <body>
-    <button id="saveButton" onclick="getGrades()">Show Popup</button>
+    <button id="showPopupButton" onclick="showPopup()">Show Popup</button>
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" id="closePopupButton" onclick="closePopup()">×</span>
             <p>This is a simple popup!</p>
-</div>
-</div>
-</body>
+        </div>
+    </div>
 
 <script>
 function getGrades(){
@@ -39,6 +38,20 @@ function getGrades(){
     button.classList.toggle("show");
 }
 </script>
+
+<script>
+    function showPopup() {
+    popup.style.display = "block";
+}
+</script>
+
+<script>
+    function closePopup() {
+    popup.style.display = "none"; 
+    }
+</script>
+
+
 
 <script>
     function curveGrades() {
