@@ -1,5 +1,5 @@
 
-<html>
+
 
 <form>
   <label for="Grades">Enter Grades:</label><br>
