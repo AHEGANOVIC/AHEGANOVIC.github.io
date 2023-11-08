@@ -1,9 +1,8 @@
 
 <html>
 
-     
 <body>
-<button onclick = "doSomething()" click me<</button>
+<button onclick = "doSomething()" >click me</button>
 </body>
 
 <body>
@@ -12,8 +11,9 @@
 
 
 <script>
-     function doSomething(){
-         document.getElementById("greeting").innerHTML = "Goodbye";
+function doSomething(){
+     document.getElementById("greeting").innerHTML = "Goodbye";
+}
  </script>
 
 
