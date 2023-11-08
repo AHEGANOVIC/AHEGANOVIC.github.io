@@ -1,5 +1,8 @@
 
 <html>
+<form>
+  <label for="Grades">Enter Grades:</label><br>
+  <input type="text" id="ungrades" name="grades"><br>
 
 <body>
 <button onclick = "doSomething()" >click me</button>
