@@ -9,13 +9,16 @@
 
 <script>
 function saveGrades(){
-    var obgrades = document.getElementById("ungrades").value 
+    var obgrades;
+    document.getElementById("ungrades").value 
 }
  </script>
 
- <script>
-   
- </script>
+<script>
+function curveGrades(){
+    
+}
+</script>
 
 
 
