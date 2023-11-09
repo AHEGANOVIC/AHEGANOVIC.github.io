@@ -9,8 +9,9 @@
 
 <script>
 function saveGrades(){
-    var obgrades;
-    document.getElementById("ungrades").value 
+    let gradeslist = []
+    var obgrades = document.getElementById("ungrades").value 
+    gradeslist.push(obgrades)   
 }
  </script>
 
