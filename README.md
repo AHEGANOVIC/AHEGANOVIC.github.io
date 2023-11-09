@@ -1,9 +1,7 @@
 
 
-
-<form onsumbit = "jsFunction();return false">
-  <label for="Grades">Enter Grades:</label><br>
-  <input type="text" id="ungrades" name="grades"><br>
+<label for="Grades">Enter Grades:</label><br>
+<input type="text" id="ungrades" name="grades"><br>
 
 <body>
 <button onclick = "doSomething()" >Save Numbers!</button>
