@@ -5,6 +5,9 @@
         .grade-input-container {
             padding-bottom: 20px;
         }
+        .step-by-step {
+            line-height: 1.5
+        }
     </style>
     <title>Curve Grades</title>
 </head>
@@ -23,9 +26,10 @@
 
 <div class="step-by-step">
     <h1>How To Use:</h1>
-        <p>(1) Put in your grades, separated by spaces, into the first input box
-           (2) Click the button to curve the grades
-           (3) Enjoy your curved grades!
+        <p>
+        (1) Put in your grades, separated by spaces, into the first input box <br>
+        (2) Click the button to curve the grades <br>
+        (3) Enjoy your curved grades!
         </p>
 </div>
 
