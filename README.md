@@ -16,14 +16,18 @@
     <button onclick="SaveCurveGrades()">Curve Grades!</button>
 </div>
 
-
 <div class="curved-input-container">
     <label for="displayValue">Curved Grades:</label><br>
     <input type="text" name="display" size="50" id="displayValue">
 </div>
 
 <div class="step-by-step">
-    <p
+    <h1>How To Use:</h1>
+        <p>(1) Put in your grades, separated by spaces, into the first input box
+           (2) Click the button to curve the grades
+           (3) Enjoy your curved grades!
+        </p>
+</div>
 
 
 <script>
