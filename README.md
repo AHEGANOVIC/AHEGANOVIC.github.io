@@ -30,7 +30,7 @@
 
 <div class="curved-input-container">
     <label for="displayValue">Curved Grades:</label><br>
-    <input type="text" name="display" size="50" id="displayValue">
+    <input type="text" name="display" size="50" id="displayValue" maxlength="200">
 </div>
 
 
@@ -48,7 +48,7 @@ function SaveCurveGrades() {
         return Math.round(10 * Math.sqrt(numericGrade));
     });
 
-    document.getElementsByName('display')[0].value = curvedGrades.join(' ');
+    document.getElementsByName('display')[0].value = curvedGrades.join(', ');
 }
 </script>
 </body>
