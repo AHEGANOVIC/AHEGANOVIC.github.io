@@ -14,16 +14,13 @@ function SaveCurveGrades() {
     const gradeslist = [];
     var obgrades = document.getElementsByName('grades')[0].value;
 
-   
     const gradesArray = obgrades.split(',');
 
-  
     const curvedGrades = gradesArray.map(grade => {
         const numericGrade = parseFloat(grade);
-        return 10 * Math.sqrt(numericGrade);
+        return Math.round(10 * Math.sqrt(numericGrade));
     });
 
-    // Display the curved grades
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
 }
 </script>
