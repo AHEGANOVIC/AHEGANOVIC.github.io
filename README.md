@@ -1,5 +1,5 @@
 
-<body>
+
 <head>
     <style>
         .grade-input-container {
@@ -9,6 +9,7 @@
     <title>Curve Grades</title>
 </head>
 
+<body>
 <div class="grade-input-container">
     <label for="Grades">Enter Grades:</label><br>
     <input type="text" id="ungrades" name="grades" size="50"><br>
