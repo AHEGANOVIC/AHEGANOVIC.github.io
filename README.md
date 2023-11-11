@@ -2,11 +2,11 @@
 
 <head>
     <style>
-        .division {
+        .grade-input-container {
             padding-bottom: 20px;
         }
     </style>
-    <title>Your Page Title</title>
+    <title>Curve Grades</title>
 </head>
 
 <body>
