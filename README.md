@@ -19,7 +19,6 @@
 <button onclick="SaveCurveGrades()">Save Numbers and Curve Grades!</button>
 
 <label for="displayValue">Curved Grades: </label>
-
 <input type="text" name="display" size="50">
 
 </body>
