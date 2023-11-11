@@ -1,25 +1,19 @@
 
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        label, input, button, label {
-            margin-bottom: 10px; /* Add space below labels, inputs, and buttons */
-        }
-    </style>
-    <title>Grade Curving</title>
-</head>
 <body>
 
-<label for="Grades">Enter Grades:</label><br>
-<input type="text" id="ungrades" name="grades" size="50"><br>
+<div class="grade-input-container">
+    <label for="Grades">Enter Grades:</label><br>
+    <input type="text" id="ungrades" name="grades" size="50"><br>
+</div>
 
 <button onclick="SaveCurveGrades()">Curve Grades!</button>
 
-<label for="displayValue">Curved Grades: </label>
-<input type="text" name="display" size="50" id="displayValue">
+<div class="curved-input-container">
+    <label for="displayValue">Curved Grades:</label><br>
+    <input type="text" name="display" size="50" id="displayValue">
+</div>
 
 </body>
 
