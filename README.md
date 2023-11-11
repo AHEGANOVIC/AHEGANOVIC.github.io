@@ -16,10 +16,10 @@
 <label for="Grades">Enter Grades:</label><br>
 <input type="text" id="ungrades" name="grades" size="50"><br>
 
-<button onclick="SaveCurveGrades()">Save Numbers and Curve Grades!</button>
+<button onclick="SaveCurveGrades()">Curve Grades!</button>
 
 <label for="displayValue">Curved Grades: </label>
-<input type="text" name="display" size="50">
+<input type="text" name="display" size="50" id="displayValue">
 
 </body>
 
