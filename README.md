@@ -12,7 +12,7 @@
 <script>
 function SaveCurveGrades() {
     const gradeslist = new Array();
-    var obgrades = parseInt(document.getElementsByName('grades')[0].value);
+    var obgrades = document.getElementsByName('grades')[0].value;
     gradeslist.push(obgrades);
     const [ ...grades ] = gradeslist[0];
     grades.forEach((grade, index) => {
