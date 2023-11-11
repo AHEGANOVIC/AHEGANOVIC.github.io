@@ -17,8 +17,9 @@ function SaveCurveGrades() {
     const [ ...grades ] = gradeslist[0];
     grades.forEach((grade, index) => {
         const curve = 10 * Math.sqrt(grade);
+        document.getElementsByName('display')[0].value = curve;
     })
-    document.getElementsByName('display')[0].value = curve
+    
 }
  </script>
 
