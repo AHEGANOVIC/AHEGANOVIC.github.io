@@ -24,13 +24,13 @@
     
 <div class="grade-input-container">
     <label for="Grades">Enter Grades:</label><br>
-    <input type="text" id="ungrades" name="grades" size="50"><br>
+    <input type="text" id="ungrades" name="grades" size="100"><br>
     <button onclick="SaveCurveGrades()">Curve Grades!</button>
 </div>
 
 <div class="curved-input-container">
     <label for="displayValue">Curved Grades:</label><br>
-    <input type="text" name="display" size="50" id="displayValue" maxlength="200">
+    <input type="text" name="display" size="100" id="displayValue">
 </div>
 
 
