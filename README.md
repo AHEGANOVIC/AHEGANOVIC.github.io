@@ -29,7 +29,7 @@ function SaveCurveGrades() {
     var obgrades = document.getElementsByName('grades')[0].value;
 
     
-    const gradesArray = obgrades.split(',');
+    const gradesArray = obgrades.split(' ');
 
    
     const curvedGrades = gradesArray.map(grade => {
