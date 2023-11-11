@@ -1,8 +1,15 @@
 
 
+<head>
+    <style>
+        .division {
+            padding-bottom: 20px;
+        }
+    </style>
+    <title>Your Page Title</title>
+</head>
 
 <body>
-
 <div class="grade-input-container">
     <label for="Grades">Enter Grades:</label><br>
     <input type="text" id="ungrades" name="grades" size="50"><br>
@@ -14,8 +21,6 @@
     <label for="displayValue">Curved Grades:</label><br>
     <input type="text" name="display" size="50" id="displayValue">
 </div>
-
-</body>
 
 <script>
 function SaveCurveGrades() {
@@ -34,7 +39,7 @@ function SaveCurveGrades() {
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
 }
 </script>
-
+</body>
 
 
 
