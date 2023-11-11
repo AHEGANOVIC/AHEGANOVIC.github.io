@@ -1,5 +1,5 @@
 
-
+<body>
 <head>
     <style>
         .grade-input-container {
@@ -9,7 +9,6 @@
     <title>Curve Grades</title>
 </head>
 
-<body>
 <div class="grade-input-container">
     <label for="Grades">Enter Grades:</label><br>
     <input type="text" id="ungrades" name="grades" size="50"><br>
@@ -21,6 +20,10 @@
     <label for="displayValue">Curved Grades:</label><br>
     <input type="text" name="display" size="50" id="displayValue">
 </div>
+
+<div class="step-by-step">
+    <p
+
 
 <script>
 function SaveCurveGrades() {
