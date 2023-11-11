@@ -13,9 +13,9 @@
 <div class="grade-input-container">
     <label for="Grades">Enter Grades:</label><br>
     <input type="text" id="ungrades" name="grades" size="50"><br>
+    <button onclick="SaveCurveGrades()">Curve Grades!</button>
 </div>
 
-<button onclick="SaveCurveGrades()">Curve Grades!</button>
 
 <div class="curved-input-container">
     <label for="displayValue">Curved Grades:</label><br>
