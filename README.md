@@ -39,7 +39,7 @@ function SaveCurveGrades() {
         return Math.round(10 * Math.sqrt(numericGrade));
     });
 
-    document.getElementsByName('display')[0].value = curvedGrades.join(', ');
+    document.getElementsByName('display')[0].value = curvedGrades.join(' ');
 }
 </script>
 </body>
