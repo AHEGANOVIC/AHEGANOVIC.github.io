@@ -4,32 +4,30 @@
 <input type="text" id="ungrades" name="grades"><br>
 
 <body>
-<button onclick = "saveGrades()" >Save Numbers!</button>
+<button onclick = "SaveCurveGrades()" >Save Numbers and Curve Grades!</button>
 </body>
 
+<label for="displayValue">Curved Grades: </label><input type="textbox" name="display">
 
 <script>
-function saveGrades(){
-    const gradeslist = new Array(); 
-    var obgrades = document.getElementById("ungrades").value; 
-    gradeslist.push(obgrades);  
-    for (const grades of gradeslist) {
-        for (const grade of grades) {
-            var x = grade;
-        }
-    }
+function SaveCurveGrades() {
+    const gradeslist = new Array();
+    var obgrades = parseInt(document.getElementsByName('grades')[0].value);
+    gradeslist.push(obgrades);
+    const [ ...grades ] = gradeslist[0];
+    grades.forEach((grade, index) => {
+        const curve = 10 * Math.sqrt(grade);
+    })
+    document.getElementsByName('display')[0].value = curve
 }
  </script>
 
-<script>
-function curveGrades(){
-    
-}
-</script>
 
 
 
-document.getElementById("ungrades").value
+
+
+
 
 
 
