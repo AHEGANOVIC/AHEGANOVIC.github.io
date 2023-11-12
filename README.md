@@ -35,7 +35,7 @@
 
 <div class="mean-input-container">
     <label for="displayValue1">Mean of Curved Grades:</label><br>
-    <input type="text" name="display1" size="20" id=displayValue1">
+    <input type="text" name="display1" size="20" id="displayValue1">
 </div>
 
 
