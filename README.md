@@ -33,6 +33,11 @@
     <input type="text" name="display" size="100" id="displayValue">
 </div>
 
+<div class="mean-input-container">
+    <label for="displayValue">Mean of Curved Grades:</label><br>
+    <input type="text" name="display1" size="20" id=displayValue">
+</div>
+
 
 <script>
 function SaveCurveGrades() {
@@ -45,8 +50,15 @@ function SaveCurveGrades() {
         const numericGrade = parseFloat(grade);
         return Math.round(10 * Math.sqrt(numericGrade));
     });
+
+    const meanCurveGrades = gradesArray.map(grades => {
+      const sum = grades.reduce((acc, value) => acc + parseFloat(value), 0);
+          const mean = sum / grades.length;
+              return mean;
+    });
     
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
+    document.getElementsByName('display1')[0].value = meanCurveGrades
 }
 </script>
 </body>
