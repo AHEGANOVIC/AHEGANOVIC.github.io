@@ -1,5 +1,5 @@
 
-<h1> Curving Grades </h1>
+
 <head>
     <style>
         .grade-input-container {
@@ -11,10 +11,14 @@
         a[href="https://aheganovic.github.io/"] {
     display: none !important;
 }
+        h1 {
+            font-size: 2em
+        }
     </style>
     <title>Curve Grades</title>
 </head>
 
+<h1> Curving Grades </h1>
 <body>
 <div class="step-by-step">
     <h1>How To Use:</h1>
