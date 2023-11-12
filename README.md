@@ -8,6 +8,9 @@
         .step-by-step {
             line-height: 1.5
         }
+        a[href="https://aheganovic.github.io/"] {
+    display: none !important;
+}
     </style>
     <title>Curve Grades</title>
 </head>
