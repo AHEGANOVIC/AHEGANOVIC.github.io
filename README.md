@@ -41,7 +41,6 @@
 
 <script>
 function SaveCurveGrades() {
-    const gradeslist = [];
     var obgrades = document.getElementsByName('grades')[0].value;
    
     const gradesArray = obgrades.split(' ');
@@ -51,14 +50,11 @@ function SaveCurveGrades() {
         return Math.round(10 * Math.sqrt(numericGrade));
     });
 
-    const meanCurveGrades = gradesArray.map(grades => {
-      const sum = grades.reduce((acc, value) => acc + parseFloat(value), 0);
-          const mean = sum / grades.length;
-              return mean;
-    });
+    const sumOfCurvedGrades = curvedGrades.reduce((acc, value) => acc + value, 0);
+    const meanCurveGrade = sumOfCurvedGrades / curvedGrades.length;
     
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
-    document.getElementsByName('display1')[0].value = meanCurveGrades
+    document.getElementsByName('display1')[0].value = meanCurveGrade;
 }
 </script>
 </body>
