@@ -1,5 +1,5 @@
 
-
+<h1> Curving Grades </h1>
 <head>
     <style>
         .grade-input-container {
