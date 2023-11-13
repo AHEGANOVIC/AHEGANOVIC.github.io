@@ -47,8 +47,9 @@
 <script>
 function SaveCurveGrades() {
     var obgrades = document.getElementsByName('grades')[0].value;
+    var trimobgrades = obgrades.trim();
    
-    const gradesArray = obgrades.split(' ');
+    const gradesArray = trimobgrades.split(' ');
    
     const curvedGrades = gradesArray.map(grade => {
         const numericGrade = parseFloat(grade);
@@ -63,20 +64,3 @@ function SaveCurveGrades() {
 }
 </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
