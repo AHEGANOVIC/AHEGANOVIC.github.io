@@ -63,13 +63,11 @@ function SaveCurveGrades() {
     const sumOfCurvedGrades = curvedGrades.reduce((acc, value) => acc + value, 0);
     const meanCurveGrade = sumOfCurvedGrades / curvedGrades.length;
 
-    const rangemax = Math.max(gradesArray)
-    const rangemin = Math.min(gradesArray)
-    const range = rangemax - rangemin
+    const range = Math.max(gradesArray) - Math.min(gradesArray);
     
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
     document.getElementsByName('display1')[0].value = meanCurveGrade;
-    document.getElementsByName('display2')[0].value = range
+    document.getElementsByName('display2')[0].value = range;
 }
 </script>
 </body>
