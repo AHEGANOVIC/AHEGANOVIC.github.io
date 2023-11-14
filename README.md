@@ -49,12 +49,12 @@
 
 <div class="max-input-container">
     <label for="displayValue3">Max of Curved Grades:</label><br>
-    <input type="text" name="display3" size="20" id="displayValue3"
+    <input type="text" name="display3" size="20" id="displayValue3">
 </div>
 
 <div class="min-input-container">
     <label for="displayValue4">Min of Curved Grades:</label><br>
-    <input type="text" name="display4" size="20" id="displayValue4"
+    <input type="text" name="display4" size="20" id="displayValue4">
 </div>
 
 <script>
