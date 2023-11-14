@@ -1,5 +1,4 @@
 
-
 <head>
     <style>
         .grade-input-container {
@@ -43,6 +42,11 @@
     <input type="text" name="display1" size="20" id="displayValue1">
 </div>
 
+<div class="range-input-container">
+    <label for="displayValue2">Range:</label><br>
+    <input type="text" name="display2" size="20" id="displayValue1">
+</div>
+
 
 <script>
 function SaveCurveGrades() {
@@ -58,9 +62,14 @@ function SaveCurveGrades() {
 
     const sumOfCurvedGrades = curvedGrades.reduce((acc, value) => acc + value, 0);
     const meanCurveGrade = sumOfCurvedGrades / curvedGrades.length;
+
+    const rangemax = Math.max(gradesArray)
+    const rangemin = Math.min(gradesArray)
+    const range = rangemax - rangemin
     
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
     document.getElementsByName('display1')[0].value = meanCurveGrade;
+    document.getElementsByName('display2')[0].value = range
 }
 </script>
 </body>
