@@ -43,10 +43,19 @@
 </div>
 
 <div class="range-input-container">
-    <label for="displayValue2">Range:</label><br>
-    <input type="text" name="display2" size="20" id="displayValue1">
+    <label for="displayValue2">Range of Curved Grades:</label><br>
+    <input type="text" name="display2" size="20" id="displayValue2">
 </div>
 
+<div class="max-input-container">
+    <label for="displayValue3">Max of Curved Grades:</label><br>
+    <input type="text" name="display3" size="20" id="displayValue3"
+</div>
+
+<div class="min-input-container">
+    <label for="displayValue4">Min of Curved Grades:</label><br>
+    <input type="text" name="display4" size="20" id="displayValue4"
+</div>
 
 <script>
 function SaveCurveGrades() {
@@ -64,10 +73,18 @@ function SaveCurveGrades() {
     const meanCurveGrade = Math.round(sumOfCurvedGrades / curvedGrades.length);
 
     const range = Math.max(...curvedGrades) - Math.min(...curvedGrades);
+    const max = Math.max(...curvedGrades); 
+    const min = Math.min(...curvedGrades); 
+
+    
+
+    
     
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
     document.getElementsByName('display1')[0].value = meanCurveGrade;
     document.getElementsByName('display2')[0].value = range;
+    document.getElementsByName('display3')[0].value = max;
+    document.getElementsByName('display4')[0].value = min;
 }
 </script>
 </body>
