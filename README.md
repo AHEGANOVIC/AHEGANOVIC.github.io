@@ -61,7 +61,7 @@ function SaveCurveGrades() {
     });
 
     const sumOfCurvedGrades = curvedGrades.reduce((acc, value) => acc + value, 0);
-    const meanCurveGrade = sumOfCurvedGrades / curvedGrades.length;
+    const meanCurveGrade = Math.round(sumOfCurvedGrades / curvedGrades.length);
 
     const range = Math.max(...curvedGrades) - Math.min(...curvedGrades);
     
