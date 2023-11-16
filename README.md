@@ -83,6 +83,7 @@ function SaveCurveGrades() {
 
     const parsedGrade = gradesArray.map(regrade => {
         const regNumericGrade = parseFloat(regrade);
+        return regNumericGrade;
     });
     const sumOfRegGrades = parsedGrade.reduce((acc, value) => acc + value, 0);
     const meanRegGrade = Math.round(sumOfRegGrades / sumOfRegGrades.length);
