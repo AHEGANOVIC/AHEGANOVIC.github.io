@@ -37,14 +37,14 @@
     <input type="text" name="display" size="100" id="displayValue">
 </div>
 
-<div class="mean-curveinput-container">
-    <label for="displayValue1">Mean of Curved Grades:</label><br>
-    <input type="text" name="display1" size="20" id="displayValue1">
-</div>
-
 <div class="mean-reginput-contaner">
     <label for="displayValue5">Mean of Regular Grades:</label><br>
     <input type="text" name="display5" size="20" id="displayValue5">
+</div>
+
+<div class="mean-curveinput-container">
+    <label for="displayValue1">Mean of Curved Grades:</label><br>
+    <input type="text" name="display1" size="20" id="displayValue1">
 </div>
 
 <div class="range-input-container">
@@ -81,8 +81,11 @@ function SaveCurveGrades() {
     const max = Math.max(...curvedGrades); 
     const min = Math.min(...curvedGrades); 
 
-    const sumOfRegGrades = gradesArray.reduce((acc, value) => acc + value, 0);
-    const meanRegGrade = Math.round(sumOfRegGrades / gradesArray.length);
+    const parsedGrade = gradesArray.map(regrade => {
+        const regNumericGrade = parseFloat(regrade);
+    });
+    const sumOfRegGrades = parsedGrade.reduce((acc, value) => acc + value, 0);
+    const meanRegGrade = Math.round(sumOfRegGrades / sumOfRegGrades.length);
     
 
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
