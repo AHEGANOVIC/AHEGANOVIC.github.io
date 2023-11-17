@@ -86,7 +86,7 @@ function SaveCurveGrades() {
         return regNumericGrade;
     });
     const sumOfRegGrades = parsedGrade.reduce((acc, value) => acc + value, 0);
-    const meanRegGrade = Math.round(sumOfRegGrades / sumOfRegGrades.length);
+    const meanRegGrade = Math.round(sumOfRegGrades / parsedGrade.length);
     
 
     document.getElementsByName('display')[0].value = curvedGrades.join(', ');
