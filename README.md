@@ -22,7 +22,8 @@
         <p>
         (1) Put in your grades, separated by spaces, into the first input box <br>
         (2) Click the button to curve the grades <br>
-        (3) Enjoy your curved grades!
+        (3) Enjoy your curved grades! <br>
+        *IMPORTANT* If you get any NaN errors, there is probably an error when you typed in the grades into the first box, please check for any double spaces, symbols, and letters.
         </p>
 </div>
     
