@@ -32,14 +32,14 @@
     <button onclick="SaveCurveGrades()">Curve Grades!</button>
 </div>
 
-<div class="mean-reginput-contaner">
-    <label for="displayValue5">Mean of Regular Grades:</label><br>
-    <input type="text" name="display5" size="20" id="displayValue5">
-</div>
-
 <div class="curved-input-container">
     <label for="displayValue">Curved Grades:</label><br>
     <input type="text" name="display" size="100" id="displayValue">
+</div>
+
+<div class="mean-reginput-contaner">
+    <label for="displayValue5">Mean of Regular Grades:</label><br>
+    <input type="text" name="display5" size="20" id="displayValue5">
 </div>
 
 <div class="mean-curveinput-container">
